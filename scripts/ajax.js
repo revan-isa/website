@@ -1,4 +1,7 @@
 $("#contact").submit(function (event) {
+  $(".send").css("display", "none");
+  $(".sending").css("display", "block");
+
   let ajaxRequest;
 
   event.preventDefault();
@@ -14,7 +17,8 @@ $("#contact").submit(function (event) {
 
   ajaxRequest.done(function () {
     $("#msg").css("display", "block");
-
+    $(".send").css("display", "block");
+    $(".sending").css("display", "none");
     $("input, textarea").val(function () {
       return this.defaultValue;
     });
