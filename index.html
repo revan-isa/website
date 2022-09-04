@@ -82,7 +82,7 @@
             <div class="col">
               <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="container-fluid">
-                  <a class="navbar-brand fw-bold text-white" href="/">
+                  <a class="navbar-brand fw-bold text-white" href="index">
                     turkhan_mirzayev
                   </a>
                   <button
@@ -479,9 +479,23 @@
             <button
               type="submit"
               id="submit-btn"
-              class="btn btn-success py-2 px-3 w-100"
+              class="btn btn-success py-2 px-3 w-100 send"
             >
-              Send <i class="fa-solid fa-paper-plane"></i>
+              Send
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <button
+              class="btn btn-success py-2 px-3 w-100 sending"
+              type="button"
+              disabled
+              style="display: none"
+            >
+              <span
+                class="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Sending...
             </button>
           </div>
         </div>
